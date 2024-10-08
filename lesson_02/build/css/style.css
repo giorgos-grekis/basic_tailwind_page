@@ -642,6 +642,10 @@ video {
   display: none;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -652,6 +656,10 @@ video {
 
 .w-2\/3 {
   width: 66.666667%;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-full {
@@ -1091,4 +1099,3 @@ video {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
-

@@ -14,8 +14,11 @@
         <h1 class="text-3xl font-medium">
           <a href="#hero"> 🚀 Rockets </a>
         </h1>
-        <button id="hamburger-button" class="cursor-pointer text-3xl md:hidden">
-          &#9776;
+        <button
+          id="hamburger-button"
+          class="relative h-8 w-8 cursor-pointer text-3xl md:hidden"
+        >
+          <!-- &#9776; -->
         </button>
 
         <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
@@ -27,9 +30,9 @@
 
       <section
         id="mobile-menu"
-        class="absolute top-0 hidden w-full origin-top animate-open-menu flex-col justify-center bg-black text-5xl"
+        class="top-68 absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-black text-5xl"
       >
-        <button class="self-end px-6 text-8xl">&times;</button>
+        <!-- <button class="self-end px-6 text-8xl">&times;</button> -->
         <nav
           aria-label="mobile"
           class="item-center flex min-h-screen flex-col py-8"
