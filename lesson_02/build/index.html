@@ -70,7 +70,7 @@
       <!-- Hero Section -->
       <section
         id="hero"
-        class="mb-12 flex h-svh scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
+        class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
       >
         <article class="sm:w-1/2">
           <h2
@@ -244,5 +244,31 @@
         </form>
       </section>
     </main>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-teal-700 text-xl text-white">
+      <section
+        class="max-4xl mx-auto flex flex-col p-4 sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>Acme Rocket Product, Inc.</h2>
+          555 Astro Way <br />
+          Fairfield, New Jersey 12345-5555 <br />
+          Email <a href="mailto:info@email.com">Info@email.com</a> Phone:
+          <a href="tel:+15555555">(555) 555-5555</a>
+        </address>
+
+        <nav class="hidden gap-2 md:flex md:flex-col" aria-label="footer">
+          <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy; <span id="year">2024</span></p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
