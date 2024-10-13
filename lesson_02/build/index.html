@@ -19,6 +19,9 @@
           class="relative h-8 w-8 cursor-pointer text-3xl md:hidden"
         >
           <!-- &#9776; -->
+          <div
+            class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
+          ></div>
         </button>
 
         <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
@@ -67,7 +70,7 @@
       <!-- Hero Section -->
       <section
         id="hero"
-        class="mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
+        class="mb-12 flex h-svh scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
       >
         <article class="sm:w-1/2">
           <h2
@@ -177,7 +180,8 @@
 
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-      <section id="testimonials" class="my-12 p-6">
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="my-12 scroll-mt-20 p-6">
         <h2
           class="mb-6 text-center text-4xl font-bold text-slate-900 sm:text-5xl dark:text-white"
         >
@@ -200,12 +204,44 @@
 
       <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-      <section id="contact" class="my-12 p-6">
+      <!-- Contact Us Section -->
+      <section id="contact" class="my-12 scroll-mt-16 p-6">
         <h2
           class="mb-6 text-center text-4xl font-bold text-slate-900 sm:text-5xl dark:text-white"
         >
           Contact Us
         </h2>
+        <form
+          action=""
+          class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl"
+        >
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="Your Subject"
+            class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black sm:text-3xl dark:border-none"
+          />
+
+          <label for="message">Massage</label>
+          <textarea
+            id="message"
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black sm:text-3xl dark:border-none"
+          ></textarea>
+          <button
+            class="darK:border-none w-48 rounded-xl border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500"
+          >
+            Submit
+          </button>
+        </form>
       </section>
     </main>
   </body>
